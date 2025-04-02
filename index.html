@@ -4,18 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Liste de cadeaux</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
   </head>
   <body>
-    <div class="Titre">
+    <div id="titre">
       <h1>Liste de cadeaux d'anniversaire 🎁</h1>
     </div>
-    <div class="Liste">
-      <ul>
-        <li>Lego Star Wars</li>
-        <li>Montre connectée</li>
-        <li>Livre Harry Potter</li>
-      </ul>
+    <div id="checklist">
+      <input id="01" type="checkbox" name="liste-cadeaux" value="1" />
+      <label for="01">Cadeau 1</label>
+
+      <input id="02" type="checkbox" name="liste-cadeaux" value="2" />
+      <label for="02">Cadeau 2</label>
+
+      <input id="03" type="checkbox" name="liste-cadeaux" value="3" />
+      <label for="03">Cadeau 3</label>
+    </div>
+    <div id="button">
+      <button id="add-cadeau">Ajouter un cadeau</button>
     </div>
 
     <script src="script.js"></script>
