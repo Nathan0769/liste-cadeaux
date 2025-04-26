@@ -22,7 +22,7 @@
         </div>
         <div class="liste">
           <ul class="liens">
-            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">Accueil</a></li>
             <li><a href="#">Liste</a></li>
             <li><a href="#">Amis</a></li>
           </ul>
@@ -37,7 +37,7 @@
       </div>
       <div class="burger-menu">
         <ul class="liens">
-          <li><a href="#">Acceuil</a></li>
+          <li><a href="#">Accueil</a></li>
           <li><a href="#">Liste</a></li>
           <li><a href="#">Amis</a></li>
           <div class="divider"></div>
@@ -52,18 +52,20 @@
     <div id="titre">
       <h1>Liste de cadeaux d'anniversaire 🎁</h1>
     </div>
-    <div id="checklist">
-      <input id="01" type="checkbox" name="liste-cadeaux" value="1" />
-      <label for="01">Cadeau 1</label>
+    <div id="checklist"></div>
 
-      <input id="02" type="checkbox" name="liste-cadeaux" value="2" />
-      <label for="02">Cadeau 2</label>
-
-      <input id="03" type="checkbox" name="liste-cadeaux" value="3" />
-      <label for="03">Cadeau 3</label>
-    </div>
-    <div id="button">
-      <button id="add-cadeau">Ajouter un cadeau</button>
+    <div id="formulaire-add">
+      <form id="gift-form">
+        <input
+          type="text"
+          id="gift-name"
+          placeholder="Nom du cadeau"
+          required
+        />
+      </form>
+      <div id="button">
+        <button id="add-cadeau">Ajouter un cadeau</button>
+      </div>
     </div>
 
     <script src="script.js" defer></script>

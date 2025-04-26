@@ -4,7 +4,8 @@
   --check: #4f29f0;
   --disabled: #c3c8de;
   --width: 400px;
-  --height: 140px;
+  --height: auto;
+  min-height: 140px;
   --border-radius: 10px;
   background: var(--background);
   width: var(--width);
@@ -13,9 +14,9 @@
   position: relative;
   box-shadow: 0 10px 30px rgba(#414856, 0.05);
   padding: 30px 45px;
-  display: grid;
-  grid-template-columns: 40px auto;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   label {
     color: var(--text);
     position: relative;
@@ -97,6 +98,12 @@
       }
     }
   }
+}
+
+#checklist .gift-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 @keyframes move {
